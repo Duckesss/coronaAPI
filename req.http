@@ -1,0 +1,6 @@
+@baseUrl = http://localhost:3000
+@country = brazil
+GET {{baseUrl}}/lastSixMonths
+
+###
+GET https://api.covid19api.com/country/{{country}}/status/confirmed?from=2020-11-20T00:00:00Z&to=2021-05-20T00:00:00Z
