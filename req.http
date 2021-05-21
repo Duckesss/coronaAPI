@@ -4,3 +4,9 @@ GET {{baseUrl}}/lastSixMonths
 
 ###
 GET https://api.covid19api.com/country/{{country}}/status/confirmed?from=2020-11-20T00:00:00Z&to=2021-05-20T00:00:00Z
+
+###
+GET https://api.covid19api.com/country/brazil/status/confirmed/live?from=2021-05-19T00:00:00Z&to=2021-05-20T23:59:59Z
+
+###
+GET https://api.covid19api.com/country/{{country}}/status/deaths?from=2020-11-20T00:00:00Z&to=2021-05-20T00:00:00Z
