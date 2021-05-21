@@ -5,5 +5,6 @@ const routes = Router()
 routes.get("/ping", (req,res) => res.send("pong"))
 routes.get("/lastSixMonths", CoronaController.getSixMonths)
 routes.get("/getWeek/:qtdWeeks", CoronaController.getWeek)
+routes.get("/getLastMonth", CoronaController.getLastMonth)
 
 module.exports = routes

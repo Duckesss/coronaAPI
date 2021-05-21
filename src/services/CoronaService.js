@@ -11,5 +11,8 @@ module.exports = {
     instance: api,
     getCases: (country,initialDate,finalDate) => api.get(
         `/country/${country}/status/confirmed?from=${initialDate}T00:00:00Z&to=${finalDate}T23:59:59Z`
-    )
+    ),
+    getDeaths: (country,initialDate,finalDate) => api.get(
+        `/country/${country}/status/deaths?from=${initialDate}T00:00:00Z&to=${finalDate}T23:59:59Z`
+    ),
 }
